@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="presentacion" >
+    <h1>Bienvenido a Calculadora <span>PilarTecno</span></h1>
+    <img src="https://i.pinimg.com/originals/12/47/6f/12476f3b0055f71f34a9102c4834224d.png" alt="Calculadora">
+    <br>
+    <button id="botonInicial" onclick="iniciar()">Comenzar</button>
+    </div>
+    <div id="calculadoraEstructura">
+            <h3 id="tituloInicial">Ingrese los numeros a calcular</h3>
+            <div id="numeros">
+            <p>Primer numero:</p>
+            <input id="numero1" type="number">
+            <p>Segundo numero:</p>
+            <input id="numero2" type="number">
+        </div>
+        <h3>Seleccione una operacion</h3>
+        <div id="operaciones"></div>
+            <button onclick="sumar()">Suma</button>
+            <button onclick="restar()">Resta</button>
+            <button onclick="multiplicar()">Multiplicacion</button>
+            <button onclick="dividir()">Division</button>
+        <h4>Tu resultado es:</h4>
+        <textarea disabled id="resultado">Indefinido</textarea>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
